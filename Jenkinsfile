@@ -4,9 +4,9 @@ pipeline {
               label "built-in"
                 }
       stages {
-              stage ("main") {
+              stage ("23Q2") {
                 steps {
-                  echo "this is main branch"
+                  echo "this is 23Q2 branch"
                 }
               }      
             }
