@@ -21,8 +21,7 @@
 				rm -rf *
 				git clone https://github.com/pritam-jagtap/multibranch-project.git -b 23Q1
 				docker pull httpd
-    				// docker stop 23Q1
-    				// docker rm 23Q1
+    				
 				chmod -R 777 /tmp/multibranch-project/index.html
 				docker run -itdp 80:80 --name 23Q1 httpd
 				docker cp /tmp/multibranch-project/index.html 23Q1:/usr/local/apache2/htdocs
