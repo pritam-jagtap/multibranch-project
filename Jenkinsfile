@@ -24,6 +24,7 @@
 				docker pull httpd
     				docker stop 23Q3
     				docker rm 23Q3
+				chmod -R 777 /tmp/multibranch-project/index.html
 				docker run -itdp 8081:80 --name 23Q3 httpd
 				docker cp /tmp/multibranch-project/index.html 23Q3:/usr/local/apache2/htdocs
   				'''
