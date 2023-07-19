@@ -1,8 +1,10 @@
  pipeline {
 	agent {
+		label {
 		label "built-in"
 		customWorkspace "/tmp"
 		}
+	    }
 	stages {
 		stage ("install docker"){
 		steps {
