@@ -6,12 +6,11 @@
 	stages {
 		stage ("install docker"){
 		steps {
-			sh ' ' ' 
+			sh ''' 
 			yum install docker -y
 			systemctl  start docker
 			systemctl enable docker
-			
-  			' ' '
+			'''
 			}
 				}
 		stage ("docker build-23Q2") { 
